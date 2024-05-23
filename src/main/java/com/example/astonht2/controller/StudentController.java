@@ -15,7 +15,7 @@ public class StudentController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Student addStudent(
+    public Student create(
             @RequestParam String name,
             @RequestParam String skype,
             @RequestParam String telegram,
