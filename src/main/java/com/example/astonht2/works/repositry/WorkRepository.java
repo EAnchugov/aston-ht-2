@@ -1,5 +1,6 @@
 package com.example.astonht2.works.repositry;
 
+import com.example.astonht2.student.model.Student;
 import com.example.astonht2.works.model.Work;
 import com.example.astonht2.utils.HibernateSessionFactory;
 import org.hibernate.Session;
@@ -18,5 +19,9 @@ public class WorkRepository {
         tx1.commit();
         session.close();
         return work;
+    }
+
+    public Work getById(Long id) {
+        return HibernateSessionFactory.getSessionFactory().openSession().get(Work.class, id);
     }
 }

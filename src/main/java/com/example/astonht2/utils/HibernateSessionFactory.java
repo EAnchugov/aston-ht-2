@@ -1,6 +1,7 @@
 package com.example.astonht2.utils;
 
 import com.example.astonht2.attendance.model.Attendance;
+import com.example.astonht2.grades.model.Grade;
 import com.example.astonht2.works.model.Work;
 import com.example.astonht2.student.model.Student;
 import org.hibernate.HibernateException;
@@ -22,6 +23,7 @@ public class HibernateSessionFactory {
                 configuration.addAnnotatedClass(Student.class);
                 configuration.addAnnotatedClass(Attendance.class);
                 configuration.addAnnotatedClass(Work.class);
+                configuration.addAnnotatedClass(Grade.class);
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
                 sessionFactory = configuration.buildSessionFactory(builder.build());
             } catch (Exception e) {
