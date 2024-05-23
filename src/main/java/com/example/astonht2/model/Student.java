@@ -1,6 +1,5 @@
 package com.example.astonht2.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.Entity;
