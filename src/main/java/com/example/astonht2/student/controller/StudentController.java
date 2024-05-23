@@ -1,7 +1,7 @@
 package com.example.astonht2.student.controller;
 
-import com.example.astonht2.student.service.StudentService;
 import com.example.astonht2.student.model.Student;
+import com.example.astonht2.student.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

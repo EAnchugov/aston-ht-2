@@ -1,4 +1,4 @@
-package com.example.astonht2.grades.model.controller;
+package com.example.astonht2.grades.service;
 
 import com.example.astonht2.grades.model.Grade;
 import com.example.astonht2.grades.repository.GradeRepository;

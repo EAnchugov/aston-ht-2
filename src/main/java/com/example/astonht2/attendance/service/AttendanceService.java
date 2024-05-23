@@ -23,11 +23,14 @@ public class AttendanceService {
     }
 
 
-
-
     public Attendance create(Long studentId, Long workId, String present) {
         Student student = studentService.get(studentId);
         Work work = workService.getById(workId);
-        return repository.create(student, work, present);
+        Attendance attendance = Attendance.builder()
+                .student(student)
+                .work(work)
+                .present(present).
+                build();
+        return repository.create(attendance);
     }
 }

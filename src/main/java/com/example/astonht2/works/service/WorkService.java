@@ -15,6 +15,7 @@ public class WorkService {
     public Work create() {
         return repository.create();
     }
+
     public Work getById(Long id) {
         return repository.getById(id);
     }

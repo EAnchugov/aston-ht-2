@@ -19,7 +19,7 @@ public class WorksController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Work create(){
+    public Work create() {
         return service.create();
     }
 }

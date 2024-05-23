@@ -1,8 +1,7 @@
 package com.example.astonht2.works.repositry;
 
-import com.example.astonht2.student.model.Student;
-import com.example.astonht2.works.model.Work;
 import com.example.astonht2.utils.HibernateSessionFactory;
+import com.example.astonht2.works.model.Work;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Component;

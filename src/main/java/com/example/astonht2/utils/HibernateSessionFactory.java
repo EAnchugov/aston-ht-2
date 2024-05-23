@@ -2,8 +2,8 @@ package com.example.astonht2.utils;
 
 import com.example.astonht2.attendance.model.Attendance;
 import com.example.astonht2.grades.model.Grade;
-import com.example.astonht2.works.model.Work;
 import com.example.astonht2.student.model.Student;
+import com.example.astonht2.works.model.Work;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
