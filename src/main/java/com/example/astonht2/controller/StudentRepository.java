@@ -27,4 +27,14 @@ public class StudentRepository {
         session.close();
         return student;
     }
+
+    public void delete(Long id) {
+        Student student;
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+        Transaction tx1 = session.beginTransaction();
+        student = session.load(Student.class,id);
+        session.delete(student);
+        tx1.commit();
+        session.close();
+    }
 }
