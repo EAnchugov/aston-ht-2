@@ -1,4 +1,4 @@
-package com.example.astonht2.model;
+package com.example.astonht2.student.model;
 
 import lombok.*;
 

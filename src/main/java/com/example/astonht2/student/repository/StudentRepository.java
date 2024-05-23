@@ -1,6 +1,6 @@
-package com.example.astonht2.controller;
+package com.example.astonht2.student.repository;
 
-import com.example.astonht2.model.Student;
+import com.example.astonht2.student.model.Student;
 import com.example.astonht2.utils.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

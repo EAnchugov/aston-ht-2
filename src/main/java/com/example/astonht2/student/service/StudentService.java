@@ -1,6 +1,7 @@
-package com.example.astonht2.controller;
+package com.example.astonht2.student.service;
 
-import com.example.astonht2.model.Student;
+import com.example.astonht2.student.model.Student;
+import com.example.astonht2.student.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
