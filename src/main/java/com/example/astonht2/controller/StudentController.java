@@ -30,4 +30,10 @@ public class StudentController {
                 .isActive(true)
                 .build());
     }
+
+    @PatchMapping
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public Student update(@RequestBody Student student){
+        return service.update(student);
+    }
 }

@@ -19,4 +19,12 @@ public class StudentRepository {
         return student;
     }
 
+    public Student update(Student student) {
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+        Transaction tx1 = session.beginTransaction();
+        session.update(student);
+        tx1.commit();
+        session.close();
+        return student;
+    }
 }

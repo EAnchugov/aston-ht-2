@@ -16,4 +16,8 @@ public class StudentService {
     public Student create(Student student) {
         return repository.save(student);
     }
+
+    public Student update(Student student) {
+        return repository.update(student);
+    }
 }
