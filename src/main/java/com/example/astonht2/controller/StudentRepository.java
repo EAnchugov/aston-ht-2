@@ -7,6 +7,9 @@ import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
 import org.hibernate.cfg.Configuration;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Repository
 public class StudentRepository {
 
@@ -36,5 +39,15 @@ public class StudentRepository {
         session.delete(student);
         tx1.commit();
         session.close();
+    }
+
+    public List<Student> getAll() {
+        List<Student> students = HibernateSessionFactory.getSessionFactory().openSession().createQuery("From Student").list();
+        return students;
+
+    }
+
+    public Student get(Long id) {
+        return HibernateSessionFactory.getSessionFactory().openSession().get(Student.class, id);
     }
 }

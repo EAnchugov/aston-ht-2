@@ -4,6 +4,9 @@ import com.example.astonht2.model.Student;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequestMapping("/students/")
 public class StudentController {
@@ -42,6 +45,16 @@ public class StudentController {
     public void delete(@PathVariable Long id){
         service.delete(id);
 
+    }
+    @GetMapping("{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Student get(@PathVariable Long id){
+        return service.get(id);
+    }
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<Student> getAll(){
+        return service.getAll();
     }
 
 }
