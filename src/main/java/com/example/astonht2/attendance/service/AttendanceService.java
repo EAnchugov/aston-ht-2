@@ -8,8 +8,9 @@ import com.example.astonht2.works.model.Work;
 import com.example.astonht2.works.service.WorkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 
-@Controller
+@Service
 public class AttendanceService {
     private final AttendanceRepository repository;
     private final StudentService studentService;

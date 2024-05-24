@@ -5,10 +5,11 @@ import com.example.astonht2.works.model.Work;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 
-@Component
+@Repository
 public class WorkRepository {
     public Work create() {
         Work work = Work.builder().date(LocalDate.now()).build();
